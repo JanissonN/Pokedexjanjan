@@ -1,0 +1,155 @@
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logopokemon img {
+    width: 15rem;
+}
+
+.Pokemon {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   list-style: none;
+   gap: 1rem;
+   width: 100%;
+}
+
+.Pokemon li img {
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+}
+
+.Pokemon li p {
+    text-shadow: 1px 1px 5px rgb(0, 3, 6);
+    width: 100%;
+    height: auto;
+}
+
+.Pokemon li {
+    color: #ffffff;
+    border-radius: 1rem;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    padding: 1rem;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.descricao {
+    font-size: small;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.info div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.Pokemon li.verde {
+    background: linear-gradient(1deg, transparent, rgb(255, 255, 255));
+    box-shadow:1px 1px 5px #02fd02;
+}
+.Pokemon li.azul {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #1100ff;
+}
+.Pokemon li.vermelho {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #ff0000;
+}
+.Pokemon li.laranja {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #ff7c01;
+}
+.Pokemon li.preto {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #736b6b;
+}
+.Pokemon li.rosa {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #ff00c3;
+}
+.Pokemon li.amarelo {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #fbff00;
+}
+.Pokemon li.roxo {
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255));
+    box-shadow:1px 1px 5px #ae00ff;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .Pokemon li img {
+        width: 50%;
+    }
+} 
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .Pokemon li img {
+        width: 50%;
+    }
+    .Pokemon {
+        gap: 2.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Large Desktop  */
+@media only screen and (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        margin: auto;
+        gap: 2.5rem;
+    }
+
+    .Pokemon {
+        gap: 2.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Pokemon li img {
+        gap: 2.5rem;
+        width: 30%;
+    }
+}
